@@ -4,7 +4,7 @@ const items = [
   {
     icon: IconPin,
     title: "Our Office",
-    lines: ["No. 123, First Floor,", "Anna Salai, Chennai,", "Tamil Nadu – 600002"],
+    lines: ["Krishnagiri - 635 001,", "Tamilnadu."],
   },
   {
     icon: IconPhone,

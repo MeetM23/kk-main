@@ -106,9 +106,9 @@ export default function Footer() {
               <li className="flex items-start gap-3 text-[14px] text-white/50">
                 <IconPin className="mt-0.5 h-4 w-4 flex-none text-[#c8974a]" />
                 <span>
-                  2nd Floor, Kalaivaani House, SG Highway,
+                  Krishnagiri - 635 001,
                   <br />
-                  Ahmedabad, Gujarat 380015
+                  Tamilnadu.
                 </span>
               </li>
               <li className="flex items-center gap-3 text-[14px] text-white/50">

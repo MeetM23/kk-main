@@ -13,7 +13,7 @@ const subjects = [
 ];
 
 // Update this with your real office address for the map + directions link.
-const OFFICE_ADDRESS = "No. 123, Anna Salai, Chennai, Tamil Nadu 600002";
+const OFFICE_ADDRESS = "Krishnagiri - 635 001, Tamilnadu";
 const MAPS_EMBED_SRC = `https://www.google.com/maps?q=${encodeURIComponent(
   OFFICE_ADDRESS
 )}&output=embed`;
@@ -133,9 +133,9 @@ export default function ContactFormMap() {
                 Kalaivaani Real Estate Pvt Ltd
               </p>
               <p className="mt-2 text-[12px] leading-relaxed text-[#151a2d]/60">
-                No. 123, First Floor, Anna Salai,
+                Krishnagiri - 635 001,
                 <br />
-                Chennai, Tamil Nadu – 600002
+                Tamilnadu.
               </p>
               <a
                 href={MAPS_DIRECTIONS_HREF}
