@@ -11,6 +11,7 @@ export default function Page() {
     <>
       <Navbar />
       <ContactHero />
+      <ContactInfoBar />
       <ContactFormMap />
       <ContactFAQ />
       <ContactCTA />

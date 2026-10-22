@@ -36,7 +36,7 @@ export default function Navbar() {
         >
           <Image
             src="/logo1.svg"
-            alt="Kalaivaani Real Estate"
+            alt="Kalaivani Real Estate"
             width={100}
             height={80}
             className="w-[150px] h-auto"
@@ -86,7 +86,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <Link
-          href="/enquire"
+          href="/contact#form"
           className="
             hidden md:inline-flex items-center gap-3
             bg-[#151B26] text-[#C8973E]
@@ -189,7 +189,7 @@ export default function Navbar() {
           })}
 
           <Link
-            href="/enquire"
+            href="/contact#form"
             onClick={() => setOpen(false)}
             className="
               inline-flex items-center justify-center gap-3

@@ -10,7 +10,7 @@ const stats = [
 
 export default function OurJourney() {
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section id="story" className="bg-white py-20 lg:py-28">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2 lg:gap-20 lg:px-12">
         {/* Image with decorative dot grid */}
         <div className="relative">

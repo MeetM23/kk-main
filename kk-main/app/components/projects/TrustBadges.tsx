@@ -4,7 +4,17 @@ const badges = [
   {
     icon: IconShield,
     title: "RERA Registered",
-    description: "Every project is registered under GRERA for full transparency.",
+    description: "Every project is registered under RERA for full transparency.",
+  },
+  {
+    icon: IconDocument,
+    title: "DTCP Approval",
+    description: "Layouts and plots approved by the Directorate of Town and Country Planning.",
+  },
+  {
+    icon: IconDocument,
+    title: "Building Approval",
+    description: "Construction carried out with sanctioned building plans and approvals.",
   },
   {
     icon: IconDocument,
@@ -27,7 +37,7 @@ export default function TrustBadges() {
   return (
     <section className="bg-white py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
           {badges.map((badge) => (
             <div key={badge.title} className="flex flex-col items-start gap-4">
               <span className="flex h-14 w-14 items-center justify-center border border-[#c8974a]/30 text-[#c8974a]">

@@ -1,20 +1,21 @@
+import { SITE } from "../../lib/site";
 import { IconClock, IconMail, IconPhone, IconPin } from "./Icons";
 
 const items = [
   {
     icon: IconPin,
     title: "Our Office",
-    lines: ["Krishnagiri - 635 001,", "Tamilnadu."],
+    lines: [...SITE.addressLines],
   },
   {
     icon: IconPhone,
     title: "Call Us",
-    lines: ["+91 98765 43210", "+91 44 4567 8901"],
+    lines: [`Office: ${SITE.officePhone.display}`, `Mobile: ${SITE.mobilePhone.display}`],
   },
   {
     icon: IconMail,
     title: "Email Us",
-    lines: ["info@kalaivaani.com", "sales@kalaivaani.com"],
+    lines: [SITE.email],
   },
   {
     icon: IconClock,
@@ -44,7 +45,7 @@ export default function ContactInfoBar() {
                 </p>
                 <div className="mt-1.5 space-y-0.5">
                   {item.lines.map((line) => (
-                    <p key={line} className="text-[13px] leading-relaxed text-[#151a2d]/60">
+                    <p key={line} className="break-words text-[13px] leading-relaxed text-[#151a2d]/60">
                       {line}
                     </p>
                   ))}

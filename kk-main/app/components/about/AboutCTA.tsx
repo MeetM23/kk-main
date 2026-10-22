@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutCTA() {
   return (
@@ -25,13 +26,13 @@ export default function AboutCTA() {
             </p>
           </div>
 
-          <a
-            href="#contact"
+          <Link
+            href="/contact#form"
             className="inline-flex flex-none items-center gap-2 bg-[#c8974a] px-8 py-4 text-[12px] font-semibold tracking-[0.1em] text-[#151a2d] transition hover:bg-[#d9a95c]"
           >
             TALK TO OUR EXPERT
             <span aria-hidden>→</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

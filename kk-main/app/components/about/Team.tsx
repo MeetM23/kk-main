@@ -41,7 +41,7 @@ export default function Team() {
             <span className="h-px w-8 bg-[#c8974a]" />
           </p>
           <h2 className="font-serif text-4xl leading-tight text-[#151a2d] sm:text-5xl">
-            Leaders with Vision
+            Meet Our Team
           </h2>
         </div>
 

@@ -6,6 +6,7 @@ import OurValues from "../components/about/OurValues";
 import Timeline from "../components/about/Timeline";
 import AboutCTA from "../components/about/AboutCTA";
 import Team from "../components/about/Team";
+import LeaderWithVision from "../components/about/LeaderWithVision";
 
 export default function Page() {
   return (
@@ -15,6 +16,7 @@ export default function Page() {
       <OurJourney />
       <OurValues />
       <Timeline />
+      <LeaderWithVision />
       <Team />
       <AboutCTA />
       <Footer />

@@ -8,12 +8,20 @@ import {
   IconPhone,
   IconPin,
 } from "./Icons";
+import { SITE } from "../lib/site";
 
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
   { label: "About Us", href: "/about" },
- { label: "Contact Us", href: "/contact" },];
+  { label: "Contact Us", href: "/contact" },
+];
+
+const socials = [
+  { label: "Facebook", Icon: IconFacebook, href: SITE.social.facebook },
+  { label: "Instagram", Icon: IconInstagram, href: SITE.social.instagram },
+  { label: "LinkedIn", Icon: IconLinkedin, href: SITE.social.linkedin },
+].filter((s) => s.href);
 
 const services = [
   "Property Buying & Selling",
@@ -32,17 +40,17 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/logo.svg"
-                alt="Kalaivaani Real Estate"
+                alt="Kalaivani Real Estate"
                 width={40}
                 height={40}
                 className="h-10 w-auto"
               />
               <div className="leading-tight">
                 <p className="text-[14px] font-semibold tracking-[0.16em] text-white">
-                  KALAIVAANI
+                  KALAIVANI
                 </p>
                 <p className="text-[9px] tracking-[0.2em] text-white/50">
-                  REAL ESTATE PVT LTD
+                  REAL ESTATE
                 </p>
               </div>
             </Link>
@@ -51,11 +59,13 @@ export default function Footer() {
               estate solutions for over 15 years.
             </p>
             <div className="mt-6 flex items-center gap-3">
-              {[IconFacebook, IconInstagram, IconLinkedin].map((Icon, i) => (
+              {socials.map(({ label, Icon, href }) => (
                 <a
-                  key={i}
-                  href="#"
-                  aria-label="Social link"
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
                   className="flex h-9 w-9 items-center justify-center border border-white/15 text-white/60 transition hover:border-[#c8974a] hover:text-[#c8974a]"
                 >
                   <Icon className="h-4 w-4" />
@@ -106,24 +116,35 @@ export default function Footer() {
               <li className="flex items-start gap-3 text-[14px] text-white/50">
                 <IconPin className="mt-0.5 h-4 w-4 flex-none text-[#c8974a]" />
                 <span>
-                  Krishnagiri - 635 001,
-                  <br />
-                  Tamilnadu.
+                  {SITE.addressLines.map((line, i) => (
+                    <span key={line}>
+                      {i > 0 && <br />}
+                      {line}
+                    </span>
+                  ))}
                 </span>
               </li>
               <li className="flex items-center gap-3 text-[14px] text-white/50">
                 <IconPhone className="h-4 w-4 flex-none text-[#c8974a]" />
-                <a href="tel:+919999999999" className="hover:text-[#c8974a]">
-                  +91 99999 99999
-                </a>
+                <span>
+                  Office:{" "}
+                  <a href={`tel:${SITE.officePhone.tel}`} className="hover:text-[#c8974a]">
+                    {SITE.officePhone.display}
+                  </a>
+                  <br />
+                  Mobile:{" "}
+                  <a href={`tel:${SITE.mobilePhone.tel}`} className="hover:text-[#c8974a]">
+                    {SITE.mobilePhone.display}
+                  </a>
+                </span>
               </li>
               <li className="flex items-center gap-3 text-[14px] text-white/50">
                 <IconMail className="h-4 w-4 flex-none text-[#c8974a]" />
                 <a
-                  href="mailto:hello@kalaivaani.in"
-                  className="hover:text-[#c8974a]"
+                  href={`mailto:${SITE.email}`}
+                  className="break-all hover:text-[#c8974a]"
                 >
-                  hello@kalaivaani.in
+                  {SITE.email}
                 </a>
               </li>
             </ul>
@@ -133,7 +154,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
           <p className="text-[13px] text-white/40">
-            © {new Date().getFullYear()} Kalaivaani Real Estate Pvt Ltd. All
+            © {new Date().getFullYear()} Kalaivani Real Estate. All
             rights reserved.
           </p>
           <div className="flex items-center gap-6 text-[13px] text-white/40">

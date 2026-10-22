@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { IconArrowRight, IconPin } from "./Icons";
+import { MAPS_DIRECTIONS_HREF, MAPS_EMBED_SRC, SITE } from "../../lib/site";
 
 const subjects = [
   "General Enquiry",
@@ -12,16 +13,8 @@ const subjects = [
   "Other",
 ];
 
-// Update this with your real office address for the map + directions link.
-const OFFICE_ADDRESS = "Krishnagiri - 635 001, Tamilnadu";
-const MAPS_EMBED_SRC = `https://www.google.com/maps?q=${encodeURIComponent(
-  OFFICE_ADDRESS
-)}&output=embed`;
-const MAPS_DIRECTIONS_HREF = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
-  OFFICE_ADDRESS
-)}`;
-
 export default function ContactFormMap() {
+  const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<"idle" | "submitting" | "sent">("idle");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -30,7 +23,7 @@ export default function ContactFormMap() {
     // Wire this up to a real API route / email service (e.g. Resend, Formspree).
     await new Promise((resolve) => setTimeout(resolve, 600));
     setStatus("sent");
-    e.currentTarget.reset();
+    formRef.current?.reset();
   };
 
   return (
@@ -50,7 +43,7 @@ export default function ContactFormMap() {
             possible.
           </p>
 
-          <form onSubmit={handleSubmit} className="mt-8 space-y-4">
+          <form ref={formRef} onSubmit={handleSubmit} className="mt-8 space-y-4">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <input
                 type="text"
@@ -119,7 +112,7 @@ export default function ContactFormMap() {
         {/* Map */}
         <div className="relative min-h-[420px] w-full overflow-hidden border border-black/5 lg:min-h-full">
           <iframe
-            title="Kalaivaani Real Estate office location"
+            title="Kalaivani Real Estate office location"
             src={MAPS_EMBED_SRC}
             className="h-full min-h-[420px] w-full grayscale"
             loading="lazy"
@@ -130,12 +123,15 @@ export default function ContactFormMap() {
             <IconPin className="h-9 w-9 text-[#c8974a]" />
             <div className="mt-3 bg-white p-5 shadow-lg">
               <p className="text-[14px] font-semibold text-[#151a2d]">
-                Kalaivaani Real Estate Pvt Ltd
+                Kalaivani Real Estate
               </p>
               <p className="mt-2 text-[12px] leading-relaxed text-[#151a2d]/60">
-                Krishnagiri - 635 001,
-                <br />
-                Tamilnadu.
+                {SITE.addressLines.map((line, i) => (
+                  <span key={line}>
+                    {i > 0 && <br />}
+                    {line}
+                  </span>
+                ))}
               </p>
               <a
                 href={MAPS_DIRECTIONS_HREF}

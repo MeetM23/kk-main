@@ -21,7 +21,7 @@ export default function AboutHero() {
           <span className="mt-6 block h-px w-16 bg-[#c8974a]" />
 
           <p className="mt-6 max-w-sm text-[15px] leading-relaxed text-white/70">
-            Kalaivaani Real Estate is a trusted name in real estate
+            Kalaivani Real Estate is a trusted name in real estate
             development, known for delivering spaces that inspire and stand
             the test of time.
           </p>
@@ -40,7 +40,7 @@ export default function AboutHero() {
       <div className="relative h-72 w-full sm:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-[64%] lg:[clip-path:polygon(30%_0,100%_0,100%_100%,0%_100%)]">
         <Image
           src="/abouthero.png"
-          alt="Modern Kalaivaani home with pool at dusk"
+          alt="Modern Kalaivani home with pool at dusk"
           fill
           priority
           className="object-cover"

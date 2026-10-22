@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { IconCheck } from "./Icons";
+import Link from "next/link";
 
 const points = [
   "Transparent dealings, no hidden costs",
@@ -17,7 +18,7 @@ export default function AboutUs() {
           <div className="relative h-[420px] w-full overflow-hidden sm:h-[480px]">
             <Image
               src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
-              alt="Kalaivaani Real Estate completed development"
+              alt="Kalaivani Real Estate completed development"
               fill
               className="object-cover"
             />
@@ -43,7 +44,7 @@ export default function AboutUs() {
             Building Dreams.
           </h2>
           <p className="mt-6 max-w-lg text-[15px] leading-relaxed text-[#151a2d]/70">
-            Kalaivaani Real Estate Pvt Ltd has been helping families and
+            Kalaivani Real Estate Pvt Ltd has been helping families and
             investors find, build, and design properties they&apos;re proud
             to call home. From the first site visit to the final handover,
             our team manages every detail so you don&apos;t have to.
@@ -62,12 +63,12 @@ export default function AboutUs() {
             ))}
           </ul>
 
-          <a
-            href="#about"
+          <Link
+            href="/about"
             className="mt-10 inline-flex items-center gap-2 bg-[#151a2d] px-7 py-4 text-[12px] font-semibold tracking-[0.1em] text-[#c8974a] transition hover:bg-[#1f2540]"
           >
             LEARN MORE ABOUT US
-          </a>
+          </Link>
         </div>
       </div>
     </section>

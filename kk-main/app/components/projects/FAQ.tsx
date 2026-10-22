@@ -17,7 +17,7 @@ const faqs: FAQ[] = [
   {
     question: "Are your projects RERA registered?",
     answer:
-      "Yes. Every ongoing and upcoming project is registered under GRERA (Gujarat Real Estate Regulatory Authority). Registration numbers are shared in the project brochure and agreement documents.",
+      "Yes. Every ongoing and upcoming project is registered under RERA (Real Estate Regulatory Authority). Registration numbers are shared in the project brochure and agreement documents.",
   },
   {
     question: "Do you help with home loans?",
@@ -49,7 +49,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-[#faf8f3] py-20 lg:py-28">
+    <section id="faq" className="bg-[#faf8f3] py-20 lg:py-28">
       <div className="mx-auto max-w-3xl px-6 lg:px-12">
         <div className="text-center">
           <p className="mb-3 flex items-center justify-center gap-3 text-[13px] font-medium tracking-[0.15em] text-[#c8974a]">

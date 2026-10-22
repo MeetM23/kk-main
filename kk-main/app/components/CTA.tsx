@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { SITE } from "../lib/site";
 
 export default function CTA() {
   return (
@@ -25,14 +27,14 @@ export default function CTA() {
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
-            <a
-              href="#contact"
+            <Link
+              href="/contact#form"
               className="inline-flex items-center gap-2 bg-[#c8974a] px-8 py-4 text-[12px] font-semibold tracking-[0.1em] text-[#151a2d] transition hover:bg-[#d9a95c]"
             >
               ENQUIRE NOW
-            </a>
+            </Link>
             <a
-              href="tel:+919999999999"
+              href={`tel:${SITE.officePhone.tel}`}
               className="inline-flex items-center gap-2 border border-white/40 px-8 py-4 text-[12px] font-semibold tracking-[0.1em] text-white transition hover:bg-white/10"
             >
               CALL US

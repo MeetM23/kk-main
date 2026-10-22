@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { IconArrowRight, IconPlus } from "./Icons";
+import Link from "next/link";
 
 type FAQ = {
   question: string;
@@ -25,7 +26,7 @@ const faqs: FAQ[] = [
       "Fill out the form on this page or call us directly, and our team will arrange a convenient time to show you the site or a ready sample unit.",
   },
   {
-    question: "Can I sell my property through Kalaivaani?",
+    question: "Can I sell my property through kalaivani?",
     answer:
       "Yes. We offer end-to-end resale support including valuation, listing, buyer verification, and paperwork through to registration.",
   },
@@ -61,13 +62,13 @@ export default function ContactFAQ() {
               Frequently Asked Questions
             </h2>
           </div>
-          <a
-            href="/faq"
+          <Link
+            href="/projects#faq"
             className="inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.08em] text-[#151a2d] transition hover:text-[#c8974a]"
           >
             VIEW ALL FAQ&apos;S
             <IconArrowRight className="h-3.5 w-3.5" />
-          </a>
+          </Link>
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-4 lg:grid-cols-2">

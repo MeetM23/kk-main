@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { IconArrowRight, IconArea, IconBath, IconBed, IconPin } from "./Icons";
 
 type Project = {
@@ -111,13 +112,13 @@ export default function FeaturedProjects() {
                   </span>
                 </div>
 
-                <a
-                  href="#"
+                <Link
+                  href="/contact#form"
                   className="mt-6 inline-flex items-center gap-2 text-[12px] font-semibold tracking-[0.08em] text-[#151a2d] transition group-hover:text-[#c8974a]"
                 >
-                  VIEW DETAILS
+                  ENQUIRE NOW
                   <IconArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
-                </a>
+                </Link>
               </div>
             </div>
           ))}
@@ -125,13 +126,13 @@ export default function FeaturedProjects() {
 
         {/* CTA */}
         <div className="mt-14 text-center">
-          <a
-            href="#"
+          <Link
+            href="/projects"
             className="inline-flex items-center gap-2 border border-[#151a2d] px-8 py-4 text-[12px] font-semibold tracking-[0.1em] text-[#151a2d] transition hover:bg-[#151a2d] hover:text-[#c8974a]"
           >
             VIEW ALL PROJECTS
             <IconArrowRight className="h-4 w-4" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

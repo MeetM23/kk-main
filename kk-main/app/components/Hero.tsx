@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type Feature = {
   icon: string;
@@ -45,18 +46,18 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a
-              href="#projects"
+            <Link
+              href="/projects"
               className="inline-flex items-center gap-2 bg-[#151a2d] px-7 py-4 text-[12px] font-semibold tracking-[0.1em] text-[#c8974a] transition hover:bg-[#1f2540]"
             >
               EXPLORE PROJECTS <span aria-hidden>→</span>
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/contact"
               className="inline-flex items-center gap-2 border border-[#c8974a] px-7 py-4 text-[12px] font-semibold tracking-[0.1em] text-[#151a2d] transition hover:bg-[#c8974a]/10"
             >
               CONTACT US <span aria-hidden>→</span>
-            </a>
+            </Link>
           </div>
 
           <div className="mt-14 grid grid-cols-2 gap-y-8 sm:grid-cols-4 sm:gap-x-6">

@@ -11,21 +11,21 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     name: "Rohan Mehta",
-    location: "Bought a villa in Bopal",
+    location: "Purchased a plot in Krishnagiri",
     quote:
-      "From our first site visit to getting the keys, the Kalaivaani team was transparent and quick to respond. No surprises, no hidden costs.",
+      "From our first site visit to getting the keys, the Kalaivani team was transparent and quick to respond. No surprises, no hidden costs.",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     name: "Priya Nair",
-    location: "Built a custom home",
+    location: "Built a home in Krishnagiri",
     quote:
       "We handed them our vague ideas and they turned it into a home that feels exactly like us. The interior design team especially exceeded expectations.",
     avatar: "https://randomuser.me/api/portraits/women/68.jpg",
   },
   {
     name: "Arvind & Sheela Rao",
-    location: "Sold their apartment",
+    location: "Sold their property",
     quote:
       "Selling felt stressful before we spoke to them. They handled valuation, paperwork, and buyers, and closed within six weeks.",
     avatar: "https://randomuser.me/api/portraits/women/45.jpg",

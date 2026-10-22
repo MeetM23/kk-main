@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { IconArrowRight } from "../Icons";
 
 type City = {
@@ -45,16 +46,16 @@ export default function ProjectLocations() {
             </h2>
           </div>
           <p className="max-w-sm text-[15px] leading-relaxed text-[#151a2d]/70">
-            Every Kalaivaani project is chosen for its location first —
+            Every Kalaivani project is chosen for its location first —
             connectivity, growth potential, and everyday convenience.
           </p>
         </div>
 
         <div className="mt-14 grid grid-cols-2 gap-5 lg:grid-cols-4">
           {cities.map((city) => (
-            <a
+            <Link
               key={city.name}
-              href="#"
+              href="/contact#form"
               className="group relative block h-72 overflow-hidden"
             >
               <Image
@@ -71,7 +72,7 @@ export default function ProjectLocations() {
                   <IconArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                 </p>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

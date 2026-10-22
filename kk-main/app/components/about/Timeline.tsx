@@ -5,7 +5,7 @@ const milestones = [
     icon: IconBuilding,
     year: "2008",
     title: "Foundation",
-    description: "Kalaivaani Real Estate was founded with a vision to create quality spaces.",
+    description: "Kalaivani Real Estate was founded with a vision to create quality spaces.",
   },
   {
     icon: IconApartment,
