@@ -11,8 +11,6 @@ export const SITE = {
     "Krishnagiri Taluk & District,",
     "Tamil Nadu – 635001.",
   ],
-  mapQuery:
-    "627, Chennai Salai, Thondiyankottai, Krishnagiri, Tamil Nadu 635001",
   // TODO: paste the client's real profile URLs. Links with an empty URL are hidden.
   social: {
     facebook: "",
@@ -21,10 +19,8 @@ export const SITE = {
   },
 } as const;
 
-export const MAPS_EMBED_SRC = `https://www.google.com/maps?q=${encodeURIComponent(
-  SITE.mapQuery
-)}&output=embed`;
+const COORDINATES = "12.523109436035156,78.23064422607422";
 
-export const MAPS_DIRECTIONS_HREF = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
-  SITE.mapQuery
-)}`;
+export const MAPS_EMBED_SRC = `https://www.google.com/maps?q=${COORDINATES}&z=17&hl=en&output=embed`;
+
+export const MAPS_DIRECTIONS_HREF = `https://www.google.com/maps/dir/?api=1&destination=${COORDINATES}`;

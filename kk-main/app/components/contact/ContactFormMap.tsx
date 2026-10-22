@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { IconArrowRight, IconPin } from "./Icons";
-import { MAPS_DIRECTIONS_HREF, MAPS_EMBED_SRC, SITE } from "../../lib/site";
+import { IconArrowRight } from "./Icons";
+import { MAPS_DIRECTIONS_HREF, MAPS_EMBED_SRC } from "../../lib/site";
 
 const subjects = [
   "General Enquiry",
@@ -119,30 +119,24 @@ export default function ContactFormMap() {
             referrerPolicy="no-referrer-when-downgrade"
           />
 
-          <div className="absolute left-8 top-1/2 w-64 -translate-y-1/2">
-            <IconPin className="h-9 w-9 text-[#c8974a]" />
-            <div className="mt-3 bg-white p-5 shadow-lg">
-              <p className="text-[14px] font-semibold text-[#151a2d]">
-                Kalaivani Real Estate
-              </p>
-              <p className="mt-2 text-[12px] leading-relaxed text-[#151a2d]/60">
-                {SITE.addressLines.map((line, i) => (
-                  <span key={line}>
-                    {i > 0 && <br />}
-                    {line}
-                  </span>
-                ))}
-              </p>
-              <a
-                href={MAPS_DIRECTIONS_HREF}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.06em] text-[#c8974a] hover:underline"
-              >
-                GET DIRECTIONS
-                <IconArrowRight className="h-3 w-3" />
-              </a>
-            </div>
+          <div className="absolute bottom-4 left-4 w-60 bg-white p-4 shadow-lg">
+            <p className="text-[13px] font-semibold text-[#151a2d]">
+              Kalaivani Real Estate
+            </p>
+            <p className="mt-1.5 text-[12px] leading-relaxed text-[#151a2d]/60">
+              627, Chennai Salai, Thondiyankottai,
+              <br />
+              Krishnagiri – 635001, Tamil Nadu.
+            </p>
+            <a
+              href={MAPS_DIRECTIONS_HREF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2.5 inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.06em] text-[#c8974a] hover:underline"
+            >
+              GET DIRECTIONS
+              <IconArrowRight className="h-3 w-3" />
+            </a>
           </div>
         </div>
       </div>
