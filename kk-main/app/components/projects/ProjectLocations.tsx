@@ -10,22 +10,22 @@ type City = {
 
 const cities: City[] = [
   {
-    name: "Ahmedabad",
+    name: "Krishnagiri",
     count: "24 Projects",
     image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
   },
   {
-    name: "Gandhinagar",
+    name: "Hosur",
     count: "6 Projects",
     image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
   },
   {
-    name: "Surat",
+    name: "Dharmapuri",
     count: "9 Projects",
     image: "https://images.unsplash.com/photo-1721815693498-cc28507c0ba2?auto=format&fit=crop&w=800&q=80",
   },
   {
-    name: "Vadodara",
+    name: "Salem",
     count: "4 Projects",
     image: "https://images.unsplash.com/photo-1628012209120-d9db7abf7eab?auto=format&fit=crop&w=800&q=80",
   },

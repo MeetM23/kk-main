@@ -32,7 +32,7 @@ type Project = {
 const projects: Project[] = [
   {
     name: "The Meridian Villa",
-    location: "Bopal, Ahmedabad",
+    location: "Hosur Road, Krishnagiri",
     price: "₹2.4 Cr onwards",
     image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80",
     category: "Villas",
@@ -44,7 +44,7 @@ const projects: Project[] = [
   },
   {
     name: "Palm Grove Estate",
-    location: "Shela, Ahmedabad",
+    location: "Bagalur Road, Hosur",
     price: "₹3.1 Cr onwards",
     image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1200&q=80",
     category: "Villas",
@@ -56,7 +56,7 @@ const projects: Project[] = [
   },
   {
     name: "Willow Park Homes",
-    location: "Bodakdev, Ahmedabad",
+    location: "Royakottai Road, Krishnagiri",
     price: "₹2.9 Cr onwards",
     image: "https://images.unsplash.com/photo-1721815693498-cc28507c0ba2?auto=format&fit=crop&w=1200&q=80",
     category: "Villas",
@@ -68,7 +68,7 @@ const projects: Project[] = [
   },
   {
     name: "Azure Court Residences",
-    location: "SG Highway, Ahmedabad",
+    location: "Bengaluru Highway, Krishnagiri",
     price: "₹1.8 Cr onwards",
     image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80",
     category: "Apartments",
@@ -80,7 +80,7 @@ const projects: Project[] = [
   },
   {
     name: "Sunrise Heights",
-    location: "Thaltej, Ahmedabad",
+    location: "Mathigiri, Hosur",
     price: "₹1.4 Cr onwards",
     image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
     category: "Apartments",
@@ -92,7 +92,7 @@ const projects: Project[] = [
   },
   {
     name: "Silver Oak Residency",
-    location: "Prahladnagar, Ahmedabad",
+    location: "Dharmapuri Road, Krishnagiri",
     price: "₹1.6 Cr onwards",
     image: "https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?auto=format&fit=crop&w=1200&q=80",
     category: "Apartments",
@@ -104,7 +104,7 @@ const projects: Project[] = [
   },
   {
     name: "Kalaivani Business Park",
-    location: "SG Highway, Ahmedabad",
+    location: "Bangalore Road, Krishnagiri",
     price: "₹85 Lakh onwards",
     image: "https://images.unsplash.com/photo-1574958269340-fa927503f3dd?auto=format&fit=crop&w=1200&q=80",
     category: "Commercial",
@@ -116,7 +116,7 @@ const projects: Project[] = [
   },
   {
     name: "Orion Corporate Tower",
-    location: "Science City Road, Ahmedabad",
+    location: "SIPCOT, Hosur",
     price: "₹1.2 Cr onwards",
     image: "https://images.unsplash.com/photo-1576731753569-3e93a228048c?auto=format&fit=crop&w=1200&q=80",
     category: "Commercial",
@@ -128,7 +128,7 @@ const projects: Project[] = [
   },
   {
     name: "Vertex Trade Centre",
-    location: "Iscon Cross Road, Ahmedabad",
+    location: "Salem Road, Krishnagiri",
     price: "₹95 Lakh onwards",
     image: "https://images.unsplash.com/photo-1628012209120-d9db7abf7eab?auto=format&fit=crop&w=1200&q=80",
     category: "Commercial",

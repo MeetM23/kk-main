@@ -16,7 +16,7 @@ type Project = {
 const projects: Project[] = [
   {
     name: "The Meridian Villa",
-    location: "Bopal, Ahmedabad",
+    location: "Hosur Road, Krishnagiri",
     price: "₹2.4 Cr onwards",
     image:
       "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80",
@@ -27,7 +27,7 @@ const projects: Project[] = [
   },
   {
     name: "Azure Court Residences",
-    location: "SG Highway, Ahmedabad",
+    location: "Bengaluru Highway, Krishnagiri",
     price: "₹1.8 Cr onwards",
     image:
       "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80",
@@ -38,7 +38,7 @@ const projects: Project[] = [
   },
   {
     name: "Palm Grove Estate",
-    location: "Shela, Ahmedabad",
+    location: "Bagalur Road, Hosur",
     price: "₹3.1 Cr onwards",
     image:
       "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1200&q=80",
