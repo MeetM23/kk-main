@@ -5,7 +5,7 @@ const items = [
   {
     icon: IconPin,
     title: "Our Office",
-    lines: [...SITE.addressLines],
+    lines: ["627, Chennai Salai, Thondiyankottai,", "Krishnagiri Town, Krishnagiri Taluk & District,", "Tamil Nadu – 635001."],
   },
   {
     icon: IconPhone,
@@ -28,7 +28,7 @@ export default function ContactInfoBar() {
   return (
     <section className="relative z-10 bg-[#faf8f3] px-6 lg:px-12">
       <div className="mx-auto -mt-10 max-w-7xl border border-black/5 bg-white px-8 py-10 shadow-sm sm:-mt-14 lg:px-12">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1.4fr_1.1fr] lg:gap-8">
           {items.map((item, i) => (
             <div
               key={item.title}
@@ -39,7 +39,7 @@ export default function ContactInfoBar() {
               <span className="flex h-11 w-11 flex-none items-center justify-center border border-[#c8974a]/30 text-[#c8974a]">
                 <item.icon className="h-5 w-5" />
               </span>
-              <div>
+              <div className="min-w-0">
                 <p className="text-[15px] font-semibold text-[#151a2d]">
                   {item.title}
                 </p>
