@@ -84,6 +84,7 @@ export default function Navbar() {
           })}
         </nav>
 
+        <div className="flex items-center gap-4 shrink-0">
         {/* CTA */}
         <Link
           href="/contact#form"
@@ -141,6 +142,7 @@ export default function Navbar() {
             )}
           </svg>
         </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
